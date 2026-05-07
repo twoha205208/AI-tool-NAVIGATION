@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 工具導航站 | AI Navigator</title>
+    <meta
+      name="description"
+      content="用亮色簡潔介面快速找到各類 AI 工具，包含寫作、設計、影音、程式、效率與更多分類。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <a class="logo" href="#">AI<span>Navigator</span></a>
+        <nav class="topnav">
+          <a href="#categories">分類</a>
+          <a href="#tools">工具清單</a>
+          <a href="#submit">提交工具</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <h1>一站式 AI 工具導航</h1>
+            <p>
+              收錄全球熱門 AI 工具，依用途快速分類，幫助你在最短時間找到最適合的工具。
+            </p>
+            <div class="search-row">
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="搜尋工具名稱、描述或標籤..."
+                aria-label="搜尋 AI 工具"
+              />
+              <button id="resetBtn" type="button">重設</button>
+            </div>
+          </div>
+          <aside class="ad-slot ad-slot--hero">
+            <p class="ad-tag">AD</p>
+            <h3>頂部橫幅廣告位</h3>
+            <p>970 x 250 / 728 x 90</p>
+            <a href="#">聯絡投放</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="categories" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>工具分類</h2>
+            <p>點選分類快速篩選</p>
+          </div>
+          <div id="categoryChips" class="chips"></div>
+        </div>
+      </section>
+
+      <section id="tools" class="section section--tools">
+        <div class="container tools-layout">
+          <div>
+            <div class="section-head">
+              <h2>AI 工具清單</h2>
+              <p id="resultCount"></p>
+            </div>
+            <div id="toolGrid" class="tool-grid"></div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="ad-slot">
+              <p class="ad-tag">AD</p>
+              <h3>側欄廣告位 A</h3>
+              <p>300 x 250</p>
+              <a href="#">立即投放</a>
+            </div>
+            <div class="ad-slot">
+              <p class="ad-tag">AD</p>
+              <h3>側欄廣告位 B</h3>
+              <p>300 x 600</p>
+              <a href="#">立即投放</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="submit" class="section">
+        <div class="container submit-box">
+          <h2>提交你的 AI 工具</h2>
+          <p>
+            想上架你的產品？可開放免費收錄與付費精選推薦，建立商業化變現入口。
+          </p>
+          <button type="button">我要提交</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>© 2026 AI Navigator. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">隱私政策</a>
+          <a href="#">服務條款</a>
+          <a href="#">聯絡我們</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
