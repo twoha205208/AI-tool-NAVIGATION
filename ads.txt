@@ -1,0 +1,5 @@
+# ads.txt for AI Navigator
+# Replace the line below with your ad network record.
+# Example (Google AdSense):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
